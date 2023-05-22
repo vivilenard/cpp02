@@ -16,6 +16,7 @@ class Fixed
 		Fixed	( Fixed& copy );
 		~Fixed	();
 		Fixed	& operator= ( Fixed const & rightside );
+		Fixed	& operator<< ( Fixed const & rightside ); //implement next pls
 		int		getRawBits( void ) const;
 		void	setRawBits( int const raw );
 
