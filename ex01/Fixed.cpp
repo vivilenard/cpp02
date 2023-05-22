@@ -3,7 +3,20 @@
 static const int _n_fractional_bits = 8;
 
 Fixed::Fixed()	{std::cout << "Default constructor called"	<< std::endl;}
+
+Fixed::Fixed(const int	int_number)
+{
+	std::cout << "Int constructor called" << std::endl;
+	//this->setRawBits(int_number);
+}
+
+Fixed::Fixed(const float)
+{
+	std::cout << "Float construxtor called" << std::endl;
+}
+
 Fixed::~Fixed()	{std::cout << "Destructor called" 			<< std::endl;}
+
 
 Fixed::Fixed(Fixed& copy)
 {
