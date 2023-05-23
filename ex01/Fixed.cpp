@@ -46,8 +46,7 @@ Fixed &	Fixed::operator=(Fixed const & rhs)
 	return *this;
 }
 
-std::ostream & operator<< ( std::ostream & o, Fixed const & rhs ) // fixed point to float
-{
+std::ostream & operator<< ( std::ostream & o, Fixed const & rhs ){
 	return (o << rhs.toFloat());
 }
 
