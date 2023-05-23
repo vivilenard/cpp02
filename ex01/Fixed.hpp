@@ -7,16 +7,15 @@ class Fixed
 {
 	private:
 		int					_number_value;
-		static const int	_n_factional_bits;
+		static const int	_n_factional_bits = 8;
 
 	public:
 		Fixed	();
 		Fixed	( const int );
 		Fixed	( const float );
-		Fixed	( Fixed& copy );
+		Fixed	( const Fixed& copy );
 		~Fixed	();
 		Fixed	& operator= ( Fixed const & rightside );
-		Fixed	& operator<< ( Fixed const & rightside ); //implement next pls
 		int		getRawBits( void ) const;
 		void	setRawBits( int const raw );
 
@@ -24,4 +23,5 @@ class Fixed
 		int		toInt( void ) const;
 };
 
+std::ostream & operator<< ( std::ostream & o, Fixed const & rightside );
 # endif
