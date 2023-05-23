@@ -10,7 +10,7 @@ class Fixed
         static const int _n_factional_bits;
     public:
         Fixed();
-        Fixed( Fixed& copy );
+        Fixed( const Fixed& copy );
         ~Fixed();
         Fixed & operator= ( Fixed const & rightside );
         int getRawBits( void ) const;
