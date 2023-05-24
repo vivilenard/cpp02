@@ -119,3 +119,33 @@ Fixed&	Fixed::operator--( void )
 	this->_number_value--;
 	return (*this);
 }
+
+//static min/max functions
+
+Fixed& Fixed::min(Fixed& left, Fixed& right)
+{
+	if (left.getRawBits() <= right.getRawBits())
+		return (left);
+	return (right);
+}
+
+Fixed const & Fixed::min(Fixed const & left, Fixed const & right)
+{
+	if (left.getRawBits() <= right.getRawBits())
+		return (left);
+	return (right);
+}
+
+Fixed& Fixed::max(Fixed& left, Fixed& right)
+{
+	if (left.getRawBits() >= right.getRawBits())
+		return (left);
+	return (right);
+}
+
+Fixed const & Fixed::max(Fixed const & left, Fixed const & right)
+{
+	if (left.getRawBits() >= right.getRawBits())
+		return (left);
+	return (right);
+}

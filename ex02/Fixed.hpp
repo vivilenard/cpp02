@@ -45,9 +45,14 @@ class Fixed
 		the smallest representable ϵ such as 1 + ϵ > 1. */
 
 		Fixed operator++( int );
-		Fixed& operator++( void );
+		Fixed & operator++( void );
 		Fixed operator--( int );
-		Fixed& operator--( void );
+		Fixed & operator--( void );
+
+		static Fixed & min(Fixed& left, Fixed& right);
+		static Fixed const & min(Fixed const & left, Fixed const & right);
+		static Fixed & max(Fixed& left, Fixed& right);
+		static Fixed const & max(Fixed const & left, Fixed const & right);
 };
 
 std::ostream & operator<< ( std::ostream & o, Fixed const & rightside );

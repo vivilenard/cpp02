@@ -6,11 +6,28 @@
 /*   By: vlenard <vlenard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 23:03:22 by vlenard           #+#    #+#             */
-/*   Updated: 2023/05/24 14:31:11 by vlenard          ###   ########.fr       */
+/*   Updated: 2023/05/24 16:09:21 by vlenard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+
+int main( void ) 
+{
+	Fixed a;
+	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
+
+	std::cout << a << std::endl;
+	std::cout << ++a << std::endl;
+	std::cout << a << std::endl;
+	std::cout << a++ << std::endl;
+	std::cout << a << std::endl;
+	std::cout << b << std::endl;
+	
+	std::cout << Fixed::max( a, b ) << std::endl;
+	
+	return 0;
+}
 
 // int main( void )
 // {
@@ -41,22 +58,13 @@
 
 // 	std::cout << "j is " << (Fixed(40) != Fixed(40)) << std::endl;
 // 	std::cout << "j is " << (Fixed(40) != Fixed(4)) << std::endl;
+
+// 	Fixed const k(80);
+// 	Fixed const h(70);
+// 	std::cout << "k is " << (Fixed::min(Fixed(40), Fixed(50))) << std::endl;
+// 	std::cout << "k is " << (Fixed::min(k, k)) << std::endl;
+
+// 	std::cout << "h is " << (Fixed::max(Fixed(40), Fixed(50))) << std::endl;
+// 	std::cout << "h is " << (Fixed::max(k, h)) << std::endl;
 // 	return 0;
 // }
-
-int main( void ) 
-{
-	Fixed a;
-	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
-
-	std::cout << a << std::endl;
-	std::cout << ++a << std::endl;
-	std::cout << a << std::endl;
-	std::cout << a++ << std::endl;
-	std::cout << a << std::endl;
-	std::cout << b << std::endl;
-	
-	//std::cout << Fixed::max( a, b ) << std::endl;
-	
-	return 0;
-}
