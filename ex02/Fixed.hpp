@@ -26,7 +26,12 @@ class Fixed
 
 		//The 6 comparison operators: >, <, >=, <=, == and !=
 
-		Fixed	& operator> ( Fixed const & rhs);
+		bool	operator> ( Fixed const & rhs);
+		bool	operator< ( Fixed const & rhs);
+		bool	operator>= ( Fixed const & rhs);
+		bool	operator<= ( Fixed const & rhs);
+		bool	operator== ( Fixed const & rhs);
+		bool	operator!= ( Fixed const & rhs);
 
 		//• The 4 arithmetic operators: +, -, *, and /
 
@@ -38,6 +43,11 @@ class Fixed
 		/* The 4 increment/decrement (pre-increment and post-increment, pre-decrement and
 		post-decrement) operators, that will increase or decrease the fixed-point value from
 		the smallest representable ϵ such as 1 + ϵ > 1. */
+
+		Fixed operator++( int );
+		Fixed& operator++( void );
+		Fixed operator--( int );
+		Fixed& operator--( void );
 };
 
 std::ostream & operator<< ( std::ostream & o, Fixed const & rightside );
