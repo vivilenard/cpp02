@@ -2,14 +2,17 @@
 
 static const int _n_fractional_bits = 8;
 
-Fixed::Fixed()	{std::cout << "Default constructor called"	<< std::endl;}
-Fixed::~Fixed()	{std::cout << "Destructor called" 			<< std::endl;}
+Fixed::Fixed()
+{
+	std::cout << "Default constructor called" << std::endl;
+	this->setRawBits(0);
+}
+Fixed::~Fixed()	{std::cout << "Destructor called" << std::endl;}
 
 Fixed::Fixed( const Fixed& copy)
 {
-    std::cout << "Copy constructor called" << std::endl;
+	std::cout << "Copy constructor called" << std::endl;
 	*this = copy;
-    //this->_number_value = copy.getRawBits();
 }
 
 Fixed &	Fixed::operator=(Fixed const & rightside)
