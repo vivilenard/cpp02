@@ -1,7 +1,16 @@
 #include "Point.hpp"
 
-bool bsp( Point const a )
+bool bsp( Point const a, Point const b, Point const c, Point const point)
 {
-	Point const b(a);
 	return 1;
 }
+
+/*
+				b
+
+
+
+
+						c
+a
+*/
