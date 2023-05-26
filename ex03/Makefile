@@ -6,15 +6,15 @@
 #    By: vlenard <vlenard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/17 09:58:16 by vlenard           #+#    #+#              #
-#    Updated: 2023/05/22 22:54:48 by vlenard          ###   ########.fr        #
+#    Updated: 2023/05/26 11:29:18 by vlenard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Harl
+NAME = Fixed
 
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
-SRC = main.cpp Fixed.cpp Fixed.hpp
+SRC = main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
