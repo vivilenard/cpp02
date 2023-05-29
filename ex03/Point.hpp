@@ -11,6 +11,7 @@ class Point
 
 	public:
 		Point();
+		Point(Fixed const x, Fixed const y);
 		Point(const float a, const float b);
 		Point(Point const & a);
 		~Point();
@@ -19,12 +20,6 @@ class Point
 		Fixed	getY()	const;
 
 		Point & operator=(Point const & p);
-		// Point operator+(Point const &rhs) const;
-		// Point operator-(Point const &rhs) const;
-		// Point operator*(Point const &rhs) const;
-
 };
-
-//bool bsp( Point const a, Point const b, Point const c, Point const point);
 
 # endif

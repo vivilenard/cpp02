@@ -2,6 +2,8 @@
 
 Point::Point():_x(0), _y(0){}
 
+Point::Point(Fixed const x, Fixed const y):_x(x), _y(y){}
+
 Point::Point(const float a, const float b):_x(a), _y(b){}
 
 Point::Point(Point const & a):_x(a._x), _y(a._y){}
