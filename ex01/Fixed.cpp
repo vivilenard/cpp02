@@ -9,14 +9,12 @@ Fixed::~Fixed()	{std::cout << "Destructor called" << std::endl;}
 Fixed::Fixed(const int	int_number)
 {
 	std::cout << "Int constructor called" << std::endl;
-
 	this->setRawBits(int_number * (1 << _n_factional_bits));
 }
 
 Fixed::Fixed(const float f)
 {
 	std::cout << "Float constructor called" << std::endl;
-
 	this->setRawBits(roundf(f * (1 << _n_factional_bits)));
 }
 
