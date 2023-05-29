@@ -6,7 +6,7 @@
 /*   By: vlenard <vlenard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 23:03:22 by vlenard           #+#    #+#             */
-/*   Updated: 2023/05/24 16:09:21 by vlenard          ###   ########.fr       */
+/*   Updated: 2023/05/29 16:38:55 by vlenard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,12 @@ int main( void )
 
 // 	std::cout << "b is " << Fixed(11) - Fixed(12) << std::endl;
 	
-// 	std::cout << "c is " << Fixed(0.1f) * Fixed(0.05f) << std::endl;
+// 	std::cout << "c is " << Fixed(0.1f) * Fixed(0.5f) << std::endl;
 	
 // 	Fixed const d((Fixed(1) / Fixed(5)));
-// 	std::cout << "d is " << d << std::endl;
 
-// 	std::cout << float(1) / float(5) << std::endl;
+// 	std::cout << "d is " << d << std::endl;
+// 	//std::cout << float(1) / float(5) << std::endl;
 
 // 	std::cout << "e is " << (Fixed(40) > Fixed(4)) << std::endl;
 // 	std::cout << "e is " << (Fixed(40) > Fixed(44)) << std::endl; 
