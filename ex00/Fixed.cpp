@@ -1,11 +1,9 @@
 #include "Fixed.hpp"
 
-static const int _n_fractional_bits = 8;
-
 Fixed::Fixed()
 {
 	std::cout << "Default constructor called" << std::endl;
-	this->setRawBits(0);
+	_number_value = 0;
 }
 Fixed::~Fixed()	{std::cout << "Destructor called" << std::endl;}
 

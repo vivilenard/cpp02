@@ -7,7 +7,7 @@ class Fixed
 {
 	private:
 		int _number_value;
-		static const int _n_factional_bits;
+		static const int _n_factional_bits = 8;
 	public:
 		Fixed();
 		Fixed( const Fixed& copy );
