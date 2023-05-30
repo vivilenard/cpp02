@@ -6,11 +6,13 @@
 #    By: vlenard <vlenard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/17 09:58:16 by vlenard           #+#    #+#              #
-#    Updated: 2023/05/23 00:38:55 by vlenard          ###   ########.fr        #
+#    Updated: 2023/05/30 13:46:07 by vlenard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Fixed_MU
+
+CXX = c++
 
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 

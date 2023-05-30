@@ -22,4 +22,7 @@ class Point
 		Point & operator=(Point const & p);
 };
 
+std::ostream & operator<< (std::ostream & o, Point const & p);
+bool bsp( Point const a, Point const b, Point const c, Point const point);
+
 # endif

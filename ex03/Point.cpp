@@ -18,3 +18,8 @@ Point & Point::operator=(Point const & p)
 	(void)p;
 	return *this;
 }
+
+std::ostream & operator<< (std::ostream & o, Point const & p)
+{
+	return (o << "(" << p.getX() << "|" << p.getY() << ")");
+}

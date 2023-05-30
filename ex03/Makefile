@@ -6,11 +6,13 @@
 #    By: vlenard <vlenard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/17 09:58:16 by vlenard           #+#    #+#              #
-#    Updated: 2023/05/29 15:00:06 by vlenard          ###   ########.fr        #
+#    Updated: 2023/05/30 13:48:04 by vlenard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = bsp
+
+CXX = c++
 
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
